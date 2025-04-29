@@ -40,6 +40,17 @@ To restore simply run:
 
 Rooting the device is straightforward. By default, it comes with SuperSU, which you will need to grant access to when requesting for a root shell via adb using ARDC or adbcontrol.
 
+## Replacing Launcher
+
+The current launcher of the device only displays a dummy button, therefore we need to replace it for easier navigation.
+
+Steps:
+
+1. `cd files`
+2. Install the APK: `adb install -r Launcher.apk`
+3. `adb reboot`
+4. After reboot, reconnect to your device using adbcontrol and select `Launcher`. Set it as the default launcher by choosing "Always".
+
 ## License
 
 This repository is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
